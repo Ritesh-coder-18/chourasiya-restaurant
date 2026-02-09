@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -93,4 +97,114 @@ footer {
 
 .card:hover {
   transform: translateY(-5px);
+}
+
+
+.menu {
+  background: #fdfdfd;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.menu-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.menu-card h3 {
+  margin: 15px;
+  color: #7b2d26;
+}
+
+.menu-card p {
+  margin: 0 15px 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+.menu {
+  background: #fff;
+}
+
+.menu-category {
+  max-width: 700px;
+  margin: 30px auto;
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.menu-category h3 {
+  color: #7b2d26;
+  margin-bottom: 15px;
+  border-bottom: 2px dashed #ddd;
+  padding-bottom: 8px;
+}
+
+.menu-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-category li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-category li:last-child {
+  border-bottom: none;
+}
+
+.menu-category span:last-child {
+  font-weight: bold;
+  color: #333;
+}
+
+
+.menu-img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
 }
